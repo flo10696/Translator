@@ -9,8 +9,8 @@ class Translator():
     def __init__(self):
 
         self.language_translator = LanguageTranslatorV2(
-            username='c868ee1b-87a7-4380-b1ae-ccb31e284a4c',
-            password='4HeTKbs7lpZD')
+            username='b5a0640b-6a39-4e2e-b1e9-86be63ec2b12',
+            password='GOmf3UXTpoql')
 
 
         self.languages  = {  "en" : ["en-ar", "en-arz", "en-de", "en-es", "en-fr", "en-it", "en-ja", "en-ko", "en-pt"],
@@ -25,7 +25,7 @@ class Translator():
                         "de" : ["de-en"]}
 
     def translateInput(self, numberOfIterations, textInput):
-        
+
         languageDetection = self.language_translator.identify(textInput)
         startLanguage = languageDetection[u'languages'][0][u'language']
         self.lastTargetLanguage = startLanguage
